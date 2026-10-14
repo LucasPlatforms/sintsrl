@@ -269,22 +269,6 @@
     "vatLabel": "P.IVA e C.F."
   },
   "pages": {
-    "about": {
-      "title": "Chi siamo",
-      "description": "Dal 1990 SINT progetta la sicurezza di aziende ed enti pubblici. La storia, il metodo e il team tecnico."
-    },
-    "services": {
-      "title": "Servizi",
-      "description": "Risk management, capitolati d'appalto, progettazione e centralizzazione degli impianti di sicurezza, direzione lavori e collaudi."
-    },
-    "clients": {
-      "title": "Clienti",
-      "description": "Progetti per Terna, Poste Italiane, IKEA, Salvatore Ferragamo, Comune di Milano e altre aziende ed enti pubblici."
-    },
-    "contact": {
-      "title": "Contatti",
-      "description": "SINT S.r.l., Via Solferino 81, 20821 Meda (MB). Tel. 0362 1545393, info@sintsrl.it."
-    },
     "privacy": {
       "title": "Privacy policy",
       "description": "Informativa sul trattamento dei dati personali di SINT S.r.l.",

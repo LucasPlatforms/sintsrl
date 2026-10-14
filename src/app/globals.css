@@ -32,12 +32,16 @@
 
 /* ===== Base ===== */
 @layer base {
-  html[data-scroll-behavior="smooth"] {
+  /* Scorrimento fluido verso le sezioni; l'offset evita che l'header fisso copra i titoli. */
+  html {
     scroll-behavior: smooth;
-  }
+    scroll-padding-top: 72px;
 
-  @media (prefers-reduced-motion: reduce) {
-    html[data-scroll-behavior="smooth"] {
+    @media (width >= 50.0625rem) {
+      scroll-padding-top: 82px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
       scroll-behavior: auto;
     }
   }

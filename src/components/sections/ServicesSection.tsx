@@ -1,18 +1,23 @@
-import { getMessages } from "next-intl/server";
+import { getLocale, getMessages } from "next-intl/server";
 import { AccentHeading } from "@/components/ui/AccentHeading";
 import { Kicker } from "@/components/ui/Kicker";
+import { sectionIds } from "@/config/navigation";
 import { sectionPadding } from "@/components/ui/section";
 
-export async function ServicesSection({ asPage = false }: { asPage?: boolean }) {
+export async function ServicesSection() {
   const { services } = await getMessages();
+  const locale = await getLocale();
 
   return (
-    <section id="servizi" className={`bg-forest text-white ${sectionPadding(asPage)}`}>
+    <section
+      id={sectionIds.services[locale]}
+      data-section="services"
+      className={`bg-forest text-white ${sectionPadding()}`}
+    >
       <div className="container-site">
         <div className="mb-[60px] grid gap-[34px] md:grid-cols-[28%_1fr] md:gap-x-[6%]">
           <Kicker tone="dark">{services.kicker}</Kicker>
           <AccentHeading
-            as={asPage ? "h1" : "h2"}
             lines={services.title}
             accentClassName="text-mint"
             className="text-[clamp(40px,5vw,65px)] leading-none tracking-[-0.065em]"

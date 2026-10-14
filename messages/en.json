@@ -269,22 +269,6 @@
     "vatLabel": "VAT and tax code"
   },
   "pages": {
-    "about": {
-      "title": "About us",
-      "description": "Since 1990 SINT has engineered security for companies and public bodies. Our history, our approach and our technical team."
-    },
-    "services": {
-      "title": "Services",
-      "description": "Risk management, tender specifications, security systems design and centralised monitoring, works supervision and acceptance testing."
-    },
-    "clients": {
-      "title": "Clients",
-      "description": "Projects for Terna, Poste Italiane, IKEA, Salvatore Ferragamo, the City of Milan and other companies and public bodies."
-    },
-    "contact": {
-      "title": "Contact",
-      "description": "SINT S.r.l., Via Solferino 81, 20821 Meda (MB), Italy. Tel. +39 0362 1545393, info@sintsrl.it."
-    },
     "privacy": {
       "title": "Privacy policy",
       "description": "How SINT S.r.l. processes personal data.",

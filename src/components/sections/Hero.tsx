@@ -1,13 +1,18 @@
-import { getMessages } from "next-intl/server";
+import { getLocale, getMessages } from "next-intl/server";
 import { ArrowUpRight, MoveRight } from "lucide-react";
+import { sectionIds } from "@/config/navigation";
 import { Link } from "@/i18n/navigation";
 
 export async function Hero() {
   const { hero } = await getMessages();
+  const locale = await getLocale();
   const [titleFirst, ...titleRest] = hero.title;
 
   return (
-    <section className="relative flex min-h-[710px] items-start overflow-hidden bg-paper md:min-h-[720px] md:items-center">
+    <section
+      data-section="hero"
+      className="relative flex min-h-[710px] items-start overflow-hidden bg-paper md:min-h-[720px] md:items-center"
+    >
       <div
         aria-hidden
         className="hero-panel absolute inset-x-0 bottom-0 h-[39%] [clip-path:polygon(19%_0,100%_0,100%_100%,0_100%)] md:inset-y-0 md:right-0 md:left-[52%] md:h-auto md:[clip-path:polygon(23%_0,100%_0,100%_100%,0_100%)]"
@@ -25,13 +30,13 @@ export async function Hero() {
 
         <div className="flex flex-col items-start gap-5 xs:flex-row xs:items-center xs:gap-7">
           <Link
-            href="/servizi"
+            href={{ pathname: "/", hash: sectionIds.services[locale] }}
             className="inline-flex items-center gap-3 bg-brand px-[19px] py-[15px] text-[13px] font-bold text-white transition hover:-translate-y-0.5 hover:bg-brand-dark motion-reduce:hover:translate-y-0"
           >
             {hero.ctaPrimary} <MoveRight size={18} aria-hidden />
           </Link>
           <Link
-            href="/clienti"
+            href={{ pathname: "/", hash: sectionIds.clients[locale] }}
             className="inline-flex items-center gap-2 border-b border-current pb-1 text-[13px] font-bold"
           >
             {hero.ctaSecondary} <ArrowUpRight size={17} aria-hidden />

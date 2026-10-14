@@ -1,7 +1,8 @@
-import { getMessages } from "next-intl/server";
+import { getLocale, getMessages } from "next-intl/server";
 import { Check } from "lucide-react";
 import { AccentHeading } from "@/components/ui/AccentHeading";
 import { Kicker } from "@/components/ui/Kicker";
+import { sectionIds } from "@/config/navigation";
 import { sectionPadding } from "@/components/ui/section";
 
 /** Mette in grassetto la parte `bold` dentro `text`, se presente. */
@@ -17,17 +18,21 @@ function Highlight({ text, bold }: { text: string; bold: string }) {
   );
 }
 
-export async function AboutSection({ asPage = false }: { asPage?: boolean }) {
+export async function AboutSection() {
   const { about } = await getMessages();
+  const locale = await getLocale();
 
   return (
-    <section id="azienda" className={`bg-white ${sectionPadding(asPage)}`}>
+    <section
+      id={sectionIds.about[locale]}
+      data-section="about"
+      className={`bg-white ${sectionPadding()}`}
+    >
       <div className="container-site grid gap-[34px] md:grid-cols-[28%_1fr] md:gap-x-[6%]">
         <Kicker>{about.kicker}</Kicker>
 
         <div>
           <AccentHeading
-            as={asPage ? "h1" : "h2"}
             lines={about.title}
             className="text-[clamp(38px,4.5vw,62px)] leading-[1.03] tracking-[-0.065em]"
           />
