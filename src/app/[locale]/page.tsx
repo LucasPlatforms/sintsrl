@@ -10,7 +10,7 @@ export function generateMetadata() {
   return buildMetadata({ pathname: "/" });
 }
 
-// La home riassume tutte le sezioni; ogni sezione ha anche la sua pagina dedicata.
+// Pagina unica: il menu porta alle sezioni tramite ancore (src/config/navigation.ts).
 export default function HomePage() {
   return (
     <>

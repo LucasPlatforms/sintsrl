@@ -1,21 +1,20 @@
-import { getMessages } from "next-intl/server";
+import { getLocale, getMessages } from "next-intl/server";
 import { ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
 import { AccentHeading } from "@/components/ui/AccentHeading";
 import { Kicker } from "@/components/ui/Kicker";
+import { sectionIds } from "@/config/navigation";
 import { site } from "@/config/site";
-import { cn } from "@/lib/cn";
 
-export async function ContactSection({ asPage = false }: { asPage?: boolean }) {
+export async function ContactSection() {
   const { contact } = await getMessages();
+  const locale = await getLocale();
   const { address } = site;
 
   return (
     <section
-      id="contatti"
-      className={cn(
-        "bg-sage",
-        asPage ? "pt-[150px] md:pt-[190px]" : "pt-[85px] md:pt-[126px]",
-      )}
+      id={sectionIds.contact[locale]}
+      data-section="contact"
+      className="bg-sage pt-[85px] md:pt-[126px]"
     >
       <div className="container-site grid md:grid-cols-2">
         <div className="pb-[68px] md:pt-2 md:pr-[70px] md:pb-[118px]">
@@ -24,7 +23,6 @@ export async function ContactSection({ asPage = false }: { asPage?: boolean }) {
           </div>
           <Kicker>{contact.kicker}</Kicker>
           <AccentHeading
-            as={asPage ? "h1" : "h2"}
             lines={contact.title}
             className="my-6 text-[clamp(42px,5vw,67px)] leading-none tracking-[-0.07em]"
           />
@@ -44,7 +42,7 @@ export async function ContactSection({ asPage = false }: { asPage?: boolean }) {
         <div className="bg-ink px-7 pt-[45px] pb-[42px] text-white md:mt-[70px] md:px-[65px] md:pt-[65px] md:pb-[60px]">
           <Kicker tone="dark">{contact.panelKicker}</Kicker>
           <AccentHeading
-            as={asPage ? "h2" : "h3"}
+            as="h3"
             lines={contact.panelTitle}
             accentClassName="text-mint"
             className="mt-[27px] mb-[47px] text-[clamp(28px,3.3vw,43px)] leading-[1.08] tracking-[-0.06em]"

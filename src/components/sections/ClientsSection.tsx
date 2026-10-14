@@ -1,19 +1,24 @@
-import { getMessages } from "next-intl/server";
+import { getLocale, getMessages } from "next-intl/server";
 import { AccentHeading } from "@/components/ui/AccentHeading";
 import { Kicker } from "@/components/ui/Kicker";
+import { sectionIds } from "@/config/navigation";
 import { sectionPadding } from "@/components/ui/section";
 import { otherClients } from "@/data/clients";
 
-export async function ClientsSection({ asPage = false }: { asPage?: boolean }) {
+export async function ClientsSection() {
   const { clients } = await getMessages();
+  const locale = await getLocale();
 
   return (
-    <section id="clienti" className={`bg-paper ${sectionPadding(asPage)}`}>
+    <section
+      id={sectionIds.clients[locale]}
+      data-section="clients"
+      className={`bg-paper ${sectionPadding()}`}
+    >
       <div className="container-site">
         <div className="mb-9 md:mb-[60px]">
           <Kicker>{clients.kicker}</Kicker>
           <AccentHeading
-            as={asPage ? "h1" : "h2"}
             lines={clients.title}
             className="mt-6 text-[clamp(38px,4.5vw,62px)] leading-[1.03] tracking-[-0.065em]"
           />

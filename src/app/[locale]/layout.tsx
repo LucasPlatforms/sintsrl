@@ -32,11 +32,7 @@ export default async function LocaleLayout({ children }: LayoutProps<"/[locale]"
   const messages = await getMessages();
 
   return (
-    <html
-      lang={locale}
-      data-scroll-behavior="smooth"
-      className={`${dmSans.variable} ${manrope.variable}`}
-    >
+    <html lang={locale} className={`${dmSans.variable} ${manrope.variable}`}>
       <body id="top">
         {/* Al browser arrivano solo i testi che servono ai componenti interattivi
             (menu e selettore lingua); il resto della pagina è già HTML. */}
