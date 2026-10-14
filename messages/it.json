@@ -1,0 +1,304 @@
+{
+  "metadata": {
+    "siteName": "SINT S.r.l.",
+    "title": "SINT S.r.l. — Ingegneria della sicurezza dal 1990",
+    "description": "Dal 1990 SINT progetta sistemi di sicurezza e impianti per aziende e pubbliche amministrazioni: analisi dei rischi, capitolati, progettazione, direzione lavori e collaudi."
+  },
+  "nav": {
+    "mainNav": "Navigazione principale",
+    "homeLabel": "SINT S.r.l. — torna alla home",
+    "skipToContent": "Vai al contenuto",
+    "about": "Chi siamo",
+    "services": "Servizi",
+    "clients": "Clienti",
+    "contact": "Contatti",
+    "cta": "Parliamone",
+    "openMenu": "Apri menu",
+    "closeMenu": "Chiudi menu",
+    "switchLanguage": "Cambia lingua"
+  },
+  "languages": {
+    "it": "Italiano",
+    "en": "English"
+  },
+  "hero": {
+    "title": [
+      "Ingegneria",
+      "della sicurezza."
+    ],
+    "copy": "SINT affianca aziende e pubbliche amministrazioni nell'analisi dei rischi, nella progettazione degli impianti di sicurezza, nella direzione lavori e nei collaudi.",
+    "ctaPrimary": "Scopri i servizi",
+    "ctaSecondary": "I nostri clienti",
+    "stats": [
+      {
+        "value": "1990",
+        "label": "anno di fondazione"
+      },
+      {
+        "value": "100+",
+        "label": "siti strategici Terna"
+      },
+      {
+        "value": "24",
+        "label": "centri di meccanizzazione postale"
+      }
+    ]
+  },
+  "about": {
+    "kicker": "L'azienda",
+    "title": [
+      "La conoscenza è la",
+      "chiave del successo."
+    ],
+    "paragraphs": [
+      "SINT nasce nel gennaio 1990 per rispondere alle problematiche della sicurezza, grazie alle conoscenze accumulate dal fondatore, Mario Vago, che negli anni precedenti aveva ricoperto incarichi di responsabilità in importanti industrie del settore.",
+      "Oggi SINT si occupa dello studio, della progettazione, della realizzazione e dell'implementazione di interventi speciali di sicurezza globale, impianti elettrici e di climatizzazione, con l'obiettivo di ridurre il rischio e contenere i costi."
+    ],
+    "partnership": "In partnership con Leviton, produttore globale certificato, per soluzioni di cabling e networking.",
+    "teamTitle": "Il team",
+    "team": [
+      {
+        "name": "Laura Bramanti Vago",
+        "role": "Amministratore unico",
+        "details": "Amministrazione e gestione delle gare d'appalto",
+        "qualifications": []
+      },
+      {
+        "name": "Ing. Daniele Asnaghi",
+        "role": "Direttore tecnico",
+        "details": "",
+        "qualifications": [
+          {
+            "text": "Membro dell'elenco nazionale degli esperti di prevenzione incendi",
+            "bold": "prevenzione incendi"
+          },
+          {
+            "text": "Membro dell'elenco della Regione Lombardia degli esperti per la verifica degli impianti elettrici e meccanici",
+            "bold": "verifica degli impianti elettrici e meccanici"
+          },
+          {
+            "text": "Membro dell'elenco dei collaudatori della Regione Lombardia",
+            "bold": "collaudatori"
+          },
+          {
+            "text": "Membro dell'elenco nazionale degli esperti per la stesura dei piani per la sicurezza nei cantieri",
+            "bold": "sicurezza nei cantieri"
+          },
+          {
+            "text": "Membro dell'elenco della Regione Lombardia degli esperti certificatori in materia energetica",
+            "bold": "certificatori in materia energetica"
+          }
+        ]
+      },
+      {
+        "name": "Ing. Stefano Galli",
+        "role": "Progettazione strutturale, direzione lavori e coordinamento della sicurezza",
+        "details": "",
+        "qualifications": []
+      },
+      {
+        "name": "Arch. Katia Palena",
+        "role": "Progettazione architettonica, riqualificazione e recupero edilizio",
+        "details": "Computi metrici, disciplinari di gara e gestione delle autorizzazioni",
+        "qualifications": []
+      },
+      {
+        "name": "P.I. Pierfrancesco Velli",
+        "role": "Security specialist",
+        "details": "",
+        "qualifications": []
+      },
+      {
+        "name": "Ing. Arch. Annamaria Seveso",
+        "role": "Progettazione architettonica, strutturale e di restauro",
+        "details": "",
+        "qualifications": []
+      },
+      {
+        "name": "Arch. Giusi Valente",
+        "role": "Progettazione architettonica, riqualificazione energetica e pianificazione urbana",
+        "details": "",
+        "qualifications": []
+      },
+      {
+        "name": "Geom. Aldo Allievi",
+        "role": "Disegno AutoCAD, computi metrici e rilievi",
+        "details": "",
+        "qualifications": []
+      },
+      {
+        "name": "Diana Beltramini",
+        "role": "Sviluppo del gestionale aziendale",
+        "details": "",
+        "qualifications": []
+      },
+      {
+        "name": "Stefania Longoni",
+        "role": "Amministrazione",
+        "details": "",
+        "qualifications": []
+      }
+    ]
+  },
+  "services": {
+    "kicker": "Servizi",
+    "title": [
+      "La sicurezza,",
+      "progettata bene."
+    ],
+    "groups": [
+      {
+        "lead": "Settori di intervento",
+        "items": [
+          "Impianti di sicurezza: difese di tipo strutturale, antintrusione, antincendio, TVCC e controllo accessi",
+          "Integrazione tra la sicurezza e i controlli degli impianti tecnologici",
+          "Sistemi computerizzati di supervisione locale, regionale e nazionale",
+          "Adeguamento alle normative vigenti"
+        ]
+      },
+      {
+        "lead": "Progettazione e direzione lavori",
+        "items": [
+          "Opere architettoniche residenziali, commerciali e produttive",
+          "Opere strutturali e antisismiche",
+          "Impianti elettrici e speciali, impianti meccanici di condizionamento, antincendio e aspirazione fumi",
+          "Coordinamento della sicurezza nei cantieri, in fase di progettazione ed esecuzione"
+        ]
+      }
+    ],
+    "items": [
+      {
+        "title": "Risk management",
+        "text": "Analizziamo i rischi di sedi e impianti e definiamo strategie di sicurezza con soluzioni integrate, calibrate sulle esigenze del committente."
+      },
+      {
+        "title": "Capitolati d'appalto e confronto offerte",
+        "text": "Redigiamo specifiche tecniche e funzionali precise e univoche, base indispensabile per scegliere correttamente i fornitori, e confrontiamo le offerte."
+      },
+      {
+        "title": "Progettazione impianti",
+        "text": "Progettazione civile e industriale di impianti di sicurezza, elettrici e di controllo tecnologico, nel rispetto di standard consolidati e delle normative vigenti."
+      },
+      {
+        "title": "Centralizzazione impianti",
+        "text": "Progettiamo la centralizzazione dei sistemi di sicurezza integrati, con supervisione locale, regionale e nazionale: per Terna su oltre 100 siti strategici."
+      },
+      {
+        "title": "Building automation",
+        "text": "Studi di fattibilità per l'automazione degli edifici, basati sulle reali esigenze operative di chi li utilizza, fino al progetto esecutivo."
+      },
+      {
+        "title": "Cabling e networking",
+        "text": "In partnership con Leviton, produttore globale certificato, progettiamo e realizziamo soluzioni di cablaggio e networking integrate nella progettazione impiantistica."
+      },
+      {
+        "title": "Supervisione e direzione lavori",
+        "text": "Controlliamo e coordiniamo le imprese esecutrici e gestiamo per conto del committente i rapporti contrattuali con loro, assumendone la piena responsabilità."
+      },
+      {
+        "title": "Collaudi",
+        "text": "Verifichiamo che ogni parte delle forniture sia completa e funzionante come da contratto, redigendo i verbali previsti in ogni fase."
+      }
+    ]
+  },
+  "clients": {
+    "kicker": "Clienti",
+    "title": [
+      "Dalle infrastrutture nazionali",
+      "ai musei."
+    ],
+    "caseStudies": [
+      {
+        "client": "Terna",
+        "sector": "Infrastrutture energetiche",
+        "place": "Oltre 100 siti strategici in Italia",
+        "description": "Capitolato, gestione della gara, progettazione, verifica dei progetti e direzione lavori dei sistemi antifurto, controllo accessi e TVCC, con centralizzazione nazionale."
+      },
+      {
+        "client": "Poste Italiane",
+        "sector": "Logistica",
+        "place": "24 centri in tutta Italia",
+        "description": "Analisi dei rischi e progettazione dei sistemi di sicurezza e TVCC nei centri di meccanizzazione postale."
+      },
+      {
+        "client": "Salvatore Ferragamo",
+        "sector": "Moda e industria",
+        "place": "Firenze e Milano",
+        "description": "Analisi del rischio, progettazione dei sistemi di sicurezza, direzione lavori e collaudo degli impianti nello stabilimento di Firenze e nello showroom di Milano."
+      },
+      {
+        "client": "IKEA",
+        "sector": "Retail",
+        "place": "5 store",
+        "description": "Verifica tecnico-funzionale e progettazione esecutiva degli impianti antincendio, EVAC, TVCC, antifurto e controllo accessi."
+      },
+      {
+        "client": "Comune di Milano",
+        "sector": "Musei e cultura",
+        "place": "4 sedi museali",
+        "description": "Progettazione definitiva per l'adeguamento della videosorveglianza di Casa Museo Boschi, Galleria d'Arte Moderna, Museo del Novecento e Palazzo Reale."
+      },
+      {
+        "client": "Petronas Lubrificanti Italia",
+        "sector": "Industria",
+        "place": "Villastellone e Santena (TO)",
+        "description": "Realizzazione del sistema di videosorveglianza e di protezione perimetrale."
+      }
+    ],
+    "othersLabel": "Altri clienti"
+  },
+  "contact": {
+    "kicker": "Contatti",
+    "title": [
+      "Da Meda,",
+      "in tutta Italia."
+    ],
+    "copy": "La sede legale e operativa di SINT è a Meda (MB). Seguiamo progetti per aziende ed enti pubblici in tutta Italia.",
+    "mapsLabel": "Apri su Google Maps",
+    "panelKicker": "Parliamo del vostro progetto",
+    "panelTitle": [
+      "Ogni progetto sicuro",
+      "inizia da una conversazione."
+    ],
+    "vatLabel": "P.IVA e C.F."
+  },
+  "footer": {
+    "privacy": "Privacy policy",
+    "cookies": "Cookie policy",
+    "backToTop": "Torna su",
+    "vatLabel": "P.IVA e C.F."
+  },
+  "pages": {
+    "about": {
+      "title": "Chi siamo",
+      "description": "Dal 1990 SINT progetta la sicurezza di aziende ed enti pubblici. La storia, il metodo e il team tecnico."
+    },
+    "services": {
+      "title": "Servizi",
+      "description": "Risk management, capitolati d'appalto, progettazione e centralizzazione degli impianti di sicurezza, direzione lavori e collaudi."
+    },
+    "clients": {
+      "title": "Clienti",
+      "description": "Progetti per Terna, Poste Italiane, IKEA, Salvatore Ferragamo, Comune di Milano e altre aziende ed enti pubblici."
+    },
+    "contact": {
+      "title": "Contatti",
+      "description": "SINT S.r.l., Via Solferino 81, 20821 Meda (MB). Tel. 0362 1545393, info@sintsrl.it."
+    },
+    "privacy": {
+      "title": "Privacy policy",
+      "description": "Informativa sul trattamento dei dati personali di SINT S.r.l.",
+      "body": "Contenuto in preparazione."
+    },
+    "cookies": {
+      "title": "Cookie policy",
+      "description": "Informativa sull'uso dei cookie del sito di SINT S.r.l.",
+      "body": "Contenuto in preparazione."
+    }
+  },
+  "notFound": {
+    "title": "Pagina non trovata",
+    "message": "La pagina che cercate non esiste o è stata spostata.",
+    "cta": "Torna alla home"
+  }
+}

@@ -1,0 +1,304 @@
+{
+  "metadata": {
+    "siteName": "SINT S.r.l.",
+    "title": "SINT S.r.l. — Security engineering since 1990",
+    "description": "Since 1990 SINT has designed security and building systems for companies and public bodies: risk assessment, tender specifications, design, works supervision and acceptance testing."
+  },
+  "nav": {
+    "mainNav": "Main navigation",
+    "homeLabel": "SINT S.r.l. — back to home",
+    "skipToContent": "Skip to content",
+    "about": "About us",
+    "services": "Services",
+    "clients": "Clients",
+    "contact": "Contact",
+    "cta": "Get in touch",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "switchLanguage": "Change language"
+  },
+  "languages": {
+    "it": "Italiano",
+    "en": "English"
+  },
+  "hero": {
+    "title": [
+      "Security",
+      "engineering."
+    ],
+    "copy": "SINT supports companies and public bodies with risk assessment, security systems design, works supervision and acceptance testing.",
+    "ctaPrimary": "Explore our services",
+    "ctaSecondary": "Our clients",
+    "stats": [
+      {
+        "value": "1990",
+        "label": "founded"
+      },
+      {
+        "value": "100+",
+        "label": "Terna strategic sites"
+      },
+      {
+        "value": "24",
+        "label": "postal sorting centres"
+      }
+    ]
+  },
+  "about": {
+    "kicker": "The company",
+    "title": [
+      "Knowledge is the",
+      "key to success."
+    ],
+    "paragraphs": [
+      "SINT was founded in January 1990 to address security challenges, building on the expertise of its founder, Mario Vago, who had previously held senior roles at major companies in the sector.",
+      "Today SINT studies, designs, delivers and implements specialist integrated-security projects, electrical systems and HVAC, with the aim of reducing risk and containing costs."
+    ],
+    "partnership": "In partnership with Leviton, a certified global manufacturer, for cabling and networking solutions.",
+    "teamTitle": "Our team",
+    "team": [
+      {
+        "name": "Laura Bramanti Vago",
+        "role": "Sole Director",
+        "details": "Administration and tender management",
+        "qualifications": []
+      },
+      {
+        "name": "Ing. Daniele Asnaghi",
+        "role": "Technical Director",
+        "details": "",
+        "qualifications": [
+          {
+            "text": "Member of the Italian national register of fire prevention experts",
+            "bold": "fire prevention"
+          },
+          {
+            "text": "Member of the Lombardy Region register of experts for the inspection of electrical and mechanical systems",
+            "bold": "inspection of electrical and mechanical systems"
+          },
+          {
+            "text": "Member of the Lombardy Region register of acceptance testers",
+            "bold": "acceptance testers"
+          },
+          {
+            "text": "Member of the national register of experts in construction site safety plans",
+            "bold": "construction site safety"
+          },
+          {
+            "text": "Member of the Lombardy Region register of energy performance certifiers",
+            "bold": "energy performance certifiers"
+          }
+        ]
+      },
+      {
+        "name": "Ing. Stefano Galli",
+        "role": "Structural design, works supervision and safety coordination",
+        "details": "",
+        "qualifications": []
+      },
+      {
+        "name": "Arch. Katia Palena",
+        "role": "Architectural design, building renovation and refurbishment",
+        "details": "Bills of quantities, tender specifications and permitting",
+        "qualifications": []
+      },
+      {
+        "name": "P.I. Pierfrancesco Velli",
+        "role": "Security specialist",
+        "details": "",
+        "qualifications": []
+      },
+      {
+        "name": "Ing. Arch. Annamaria Seveso",
+        "role": "Architectural, structural and restoration design",
+        "details": "",
+        "qualifications": []
+      },
+      {
+        "name": "Arch. Giusi Valente",
+        "role": "Architectural design, energy retrofitting and urban planning",
+        "details": "",
+        "qualifications": []
+      },
+      {
+        "name": "Geom. Aldo Allievi",
+        "role": "AutoCAD drafting, bills of quantities and surveys",
+        "details": "",
+        "qualifications": []
+      },
+      {
+        "name": "Diana Beltramini",
+        "role": "Company management software development",
+        "details": "",
+        "qualifications": []
+      },
+      {
+        "name": "Stefania Longoni",
+        "role": "Administration",
+        "details": "",
+        "qualifications": []
+      }
+    ]
+  },
+  "services": {
+    "kicker": "Services",
+    "title": [
+      "Security,",
+      "properly designed."
+    ],
+    "groups": [
+      {
+        "lead": "Areas of expertise",
+        "items": [
+          "Security systems: physical protection, intrusion detection, fire protection, CCTV and access control",
+          "Integration between security and building services controls",
+          "Computerised local, regional and national monitoring systems",
+          "Compliance with current regulations"
+        ]
+      },
+      {
+        "lead": "Design and works supervision",
+        "items": [
+          "Residential, commercial and industrial buildings",
+          "Structural and seismic works",
+          "Electrical and special systems, HVAC, fire protection and smoke extraction",
+          "Construction health and safety coordination, during design and execution"
+        ]
+      }
+    ],
+    "items": [
+      {
+        "title": "Risk management",
+        "text": "We assess the risks to sites and facilities and define security strategies with integrated solutions tailored to the client's needs."
+      },
+      {
+        "title": "Tender specifications and bid comparison",
+        "text": "We draft precise, unambiguous technical and functional specifications, the basis for choosing the right suppliers, and compare the bids received."
+      },
+      {
+        "title": "Systems design",
+        "text": "Civil and industrial design of security, electrical and building control systems, following established standards and current regulations."
+      },
+      {
+        "title": "Centralised monitoring",
+        "text": "We design the centralisation of integrated security systems, with local, regional and national monitoring: for Terna, across more than 100 strategic sites."
+      },
+      {
+        "title": "Building automation",
+        "text": "Feasibility studies for building automation, based on the real operating needs of the people who use the building, through to detailed design."
+      },
+      {
+        "title": "Cabling and networking",
+        "text": "In partnership with Leviton, a certified global manufacturer, we design and deliver cabling and networking solutions integrated into the overall systems design."
+      },
+      {
+        "title": "Works supervision",
+        "text": "We monitor and coordinate the contractors and manage the contractual relationship with them on the client's behalf, taking full responsibility."
+      },
+      {
+        "title": "Acceptance testing",
+        "text": "We verify that every part of the supply is complete and working as contracted, issuing the required reports at each stage."
+      }
+    ]
+  },
+  "clients": {
+    "kicker": "Clients",
+    "title": [
+      "From national infrastructure",
+      "to museums."
+    ],
+    "caseStudies": [
+      {
+        "client": "Terna",
+        "sector": "Energy infrastructure",
+        "place": "100+ strategic sites across Italy",
+        "description": "Tender specifications, tender management, design, design review and works supervision for intrusion detection, access control and CCTV systems, with national centralised monitoring."
+      },
+      {
+        "client": "Poste Italiane",
+        "sector": "Logistics",
+        "place": "24 sites across Italy",
+        "description": "Risk assessment and design of security and CCTV systems for the postal sorting centres."
+      },
+      {
+        "client": "Salvatore Ferragamo",
+        "sector": "Fashion and manufacturing",
+        "place": "Florence and Milan",
+        "description": "Risk assessment, security systems design, works supervision and acceptance testing at the Florence production site and the Milan showroom."
+      },
+      {
+        "client": "IKEA",
+        "sector": "Retail",
+        "place": "5 stores",
+        "description": "Technical and functional review and detailed design of fire protection, voice evacuation, CCTV, intrusion detection and access control systems."
+      },
+      {
+        "client": "City of Milan",
+        "sector": "Museums and culture",
+        "place": "4 museums",
+        "description": "Definitive design for upgrading the CCTV systems of Casa Museo Boschi, the Modern Art Gallery, Museo del Novecento and Palazzo Reale."
+      },
+      {
+        "client": "Petronas Lubricants Italy",
+        "sector": "Manufacturing",
+        "place": "Villastellone and Santena (Turin)",
+        "description": "Delivery of the CCTV and perimeter protection systems."
+      }
+    ],
+    "othersLabel": "Other clients"
+  },
+  "contact": {
+    "kicker": "Contact",
+    "title": [
+      "From Meda,",
+      "across Italy."
+    ],
+    "copy": "SINT's registered and operational office is in Meda (MB), north of Milan. We work with companies and public bodies throughout Italy.",
+    "mapsLabel": "Open in Google Maps",
+    "panelKicker": "Let's talk about your project",
+    "panelTitle": [
+      "Every secure project",
+      "starts with a conversation."
+    ],
+    "vatLabel": "VAT and tax code"
+  },
+  "footer": {
+    "privacy": "Privacy policy",
+    "cookies": "Cookie policy",
+    "backToTop": "Back to top",
+    "vatLabel": "VAT and tax code"
+  },
+  "pages": {
+    "about": {
+      "title": "About us",
+      "description": "Since 1990 SINT has engineered security for companies and public bodies. Our history, our approach and our technical team."
+    },
+    "services": {
+      "title": "Services",
+      "description": "Risk management, tender specifications, security systems design and centralised monitoring, works supervision and acceptance testing."
+    },
+    "clients": {
+      "title": "Clients",
+      "description": "Projects for Terna, Poste Italiane, IKEA, Salvatore Ferragamo, the City of Milan and other companies and public bodies."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "SINT S.r.l., Via Solferino 81, 20821 Meda (MB), Italy. Tel. +39 0362 1545393, info@sintsrl.it."
+    },
+    "privacy": {
+      "title": "Privacy policy",
+      "description": "How SINT S.r.l. processes personal data.",
+      "body": "Content coming soon."
+    },
+    "cookies": {
+      "title": "Cookie policy",
+      "description": "How the SINT S.r.l. website uses cookies.",
+      "body": "Content coming soon."
+    }
+  },
+  "notFound": {
+    "title": "Page not found",
+    "message": "The page you are looking for does not exist or has been moved.",
+    "cta": "Back to home"
+  }
+}

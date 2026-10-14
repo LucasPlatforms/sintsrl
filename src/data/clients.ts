@@ -1,0 +1,32 @@
+// TODO: verificare con il cliente l'autorizzazione a pubblicare ciascun nome.
+// Nomi propri: restano uguali in tutte le lingue.
+// I clienti mostrati come case study sono in messages/<lingua>.json (clients.caseStudies).
+export const otherClients: string[] = [
+  "Polo Museale della Toscana",
+  "Sogemi – Mercato Agroalimentare Milano",
+  "Milanosport",
+  "Consorzio ASI Potenza",
+  "Comune di Meda",
+  "Bosch",
+  "Axitea",
+  "Siemens",
+  "Tre",
+  "Wind",
+  "Enel",
+  "Barilla",
+  "Nordiconad",
+  "Conad Adriatico",
+  "SEA Milano Malpensa",
+  "Guardia di Finanza",
+  "AXA Art",
+  "RAS",
+  "Helvetia",
+  "CSI Piemonte",
+  "Città di Jesolo",
+  "Comune di Vidigulfo",
+  "Comune di Arosio",
+  "Comune di Inverigo",
+  "Italfarmaco",
+  "Laboratori Nazionali del Gran Sasso (INFN)",
+  "Sanofi Aventis",
+];

@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+/* ===== Design token (palette, font, breakpoint) =====
+   Ogni token genera le utility corrispondenti: --color-brand -> text-brand, bg-brand… */
+@theme {
+  --color-ink: #17221d;
+  --color-ink-soft: #46534b;
+  --color-muted: #66706a;
+  --color-line: #dfe3de;
+  --color-paper: #f5f6f3;
+  --color-sage: #dcebdc;
+
+  --color-brand: #078c31;
+  --color-brand-dark: #055b22;
+  --color-mint: #75cf91;
+
+  --color-forest: #15211a;
+  --color-forest-panel: #1a2820;
+  --color-forest-line: #2a3b30;
+  --color-night: #101712;
+  --color-mist: #aab6ae;
+  --color-mist-light: #b5c2b9;
+  --color-mist-pale: #d0dbd4;
+
+  --font-sans: var(--font-dm-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+
+  /* Il prototipo passava al layout mobile sotto gli 800px. */
+  --breakpoint-xs: 26.3125rem; /* 421px */
+  --breakpoint-md: 50.0625rem; /* 801px */
+}
+
+/* ===== Base ===== */
+@layer base {
+  html[data-scroll-behavior="smooth"] {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html[data-scroll-behavior="smooth"] {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    min-width: 320px;
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-brand);
+    outline-offset: 3px;
+  }
+}
+
+/* ===== Utility del progetto ===== */
+
+/* Contenitore centrato: 1180px su desktop, margini laterali su mobile. */
+@utility container-site {
+  width: min(1180px, calc(100% - 64px));
+  margin-inline: auto;
+
+  @media (width < 50.0625rem) {
+    width: min(100% - 40px, 600px);
+  }
+
+  @media (width < 26.3125rem) {
+    width: calc(100% - 32px);
+  }
+}
+
+/* Riquadro decorativo dell'hero: sfumatura verde con griglia sottile. */
+@utility hero-panel {
+  background: linear-gradient(135deg, #dfe9de, #edf1eb 45%, #cddfd0);
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0.42;
+    background-image:
+      linear-gradient(rgb(255 255 255 / 0.4) 1px, transparent 1px),
+      linear-gradient(90deg, rgb(255 255 255 / 0.4) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+}
