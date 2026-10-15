@@ -85,17 +85,26 @@
 }
 
 /* Riquadro decorativo dell'hero: sfumatura verde con griglia sottile. */
-@utility hero-panel {
-  background: linear-gradient(135deg, #dfe9de, #edf1eb 45%, #cddfd0);
+/* Velo sopra l'immagine dell'hero: chiaro dove c'è il testo, trasparente verso il poligono. */
+@utility hero-veil {
+  background: linear-gradient(
+    180deg,
+    rgb(245 246 243 / 0.75) 0%,
+    rgb(245 246 243 / 0.5) 60%,
+    transparent 100%
+  );
 
-  &::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    opacity: 0.42;
-    background-image:
-      linear-gradient(rgb(255 255 255 / 0.4) 1px, transparent 1px),
-      linear-gradient(90deg, rgb(255 255 255 / 0.4) 1px, transparent 1px);
-    background-size: 48px 48px;
+  @media (width >= 50.0625rem) {
+    background: linear-gradient(
+      90deg,
+      rgb(245 246 243 / 0.7) 0%,
+      rgb(245 246 243 / 0.45) 35%,
+      transparent 55%
+    );
   }
+}
+
+/* Poligono dell'hero: overlay verde semitrasparente con griglia sottile, sopra l'immagine. */
+@utility hero-panel {
+  background-color: rgb(235 240 233 / 0.55);
 }

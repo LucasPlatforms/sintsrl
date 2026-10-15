@@ -1,5 +1,5 @@
 import { getLocale, getMessages } from "next-intl/server";
-import { ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
+import { ArrowUpRight, Mail, MapPin, Phone, Smartphone } from "lucide-react";
 import { AccentHeading } from "@/components/ui/AccentHeading";
 import { Kicker } from "@/components/ui/Kicker";
 import { sectionIds } from "@/config/navigation";
@@ -50,13 +50,30 @@ export async function ContactSection() {
 
           <ul className="flex flex-col gap-[17px] border-t border-[#3a4a40] pt-[23px] text-sm font-semibold">
             <li>
-              <a href={`mailto:${site.email}`} className="flex items-center gap-3 hover:text-mint">
-                <Mail size={18} className="text-mint" aria-hidden /> {site.email}
+              <a
+                href={`mailto:${site.email}`}
+                className="flex items-center gap-3 hover:text-mint"
+              >
+                <Mail size={18} className="text-mint" aria-hidden />{" "}
+                {site.email}
               </a>
             </li>
             <li>
-              <a href={site.phone.href} className="flex items-center gap-3 hover:text-mint">
-                <Phone size={18} className="text-mint" aria-hidden /> {site.phone.display}
+              <a
+                href={site.phone.href}
+                className="flex items-center gap-3 hover:text-mint"
+              >
+                <Phone size={18} className="text-mint" aria-hidden />{" "}
+                {site.phone.display}
+              </a>
+            </li>
+            <li>
+              <a
+                href={site.mobile.href}
+                className="flex items-center gap-3 hover:text-mint"
+              >
+                <Smartphone size={18} className="text-mint" aria-hidden />{" "}
+                {site.mobile.display}
               </a>
             </li>
           </ul>
@@ -66,7 +83,8 @@ export async function ContactSection() {
             <span>
               {site.legalName}
               <br />
-              {address.street} — {address.postalCode} {address.city} ({address.province})
+              {address.street} — {address.postalCode} {address.city} (
+              {address.province})
               <br />
               {contact.vatLabel} {site.vatNumber}
             </span>

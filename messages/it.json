@@ -1,18 +1,18 @@
 {
   "metadata": {
     "siteName": "SINT S.r.l.",
-    "title": "SINT S.r.l. — Ingegneria della sicurezza dal 1990",
+    "title": "SINT S.r.l. — Dal 1990",
     "description": "Dal 1990 SINT progetta sistemi di sicurezza e impianti per aziende e pubbliche amministrazioni: analisi dei rischi, capitolati, progettazione, direzione lavori e collaudi."
   },
   "nav": {
     "mainNav": "Navigazione principale",
     "homeLabel": "SINT S.r.l. — torna alla home",
     "skipToContent": "Vai al contenuto",
-    "about": "Chi siamo",
+    "about": "Azienda",
     "services": "Servizi",
     "clients": "Clienti",
     "contact": "Contatti",
-    "cta": "Parliamone",
+    "cta": "Contattaci",
     "openMenu": "Apri menu",
     "closeMenu": "Chiudi menu",
     "switchLanguage": "Cambia lingua"
@@ -22,37 +22,17 @@
     "en": "English"
   },
   "hero": {
-    "title": [
-      "Ingegneria",
-      "della sicurezza."
-    ],
-    "copy": "SINT affianca aziende e pubbliche amministrazioni nell'analisi dei rischi, nella progettazione degli impianti di sicurezza, nella direzione lavori e nei collaudi.",
+    "title": ["Titolo", "titolo."],
+    "copy": "Progettiamo la sicurezza di luoghi, persone e sistemi con competenza tecnica <highlight>dal {year}</highlight>.",
     "ctaPrimary": "Scopri i servizi",
-    "ctaSecondary": "I nostri clienti",
-    "stats": [
-      {
-        "value": "1990",
-        "label": "anno di fondazione"
-      },
-      {
-        "value": "100+",
-        "label": "siti strategici Terna"
-      },
-      {
-        "value": "24",
-        "label": "centri di meccanizzazione postale"
-      }
-    ]
+    "ctaSecondary": "I nostri clienti"
   },
   "about": {
     "kicker": "L'azienda",
-    "title": [
-      "La conoscenza è la",
-      "chiave del successo."
-    ],
+    "title": ["La conoscenza è la", "chiave del successo."],
     "paragraphs": [
-      "SINT nasce nel gennaio 1990 per rispondere alle problematiche della sicurezza, grazie alle conoscenze accumulate dal fondatore, Mario Vago, che negli anni precedenti aveva ricoperto incarichi di responsabilità in importanti industrie del settore.",
-      "Oggi SINT si occupa dello studio, della progettazione, della realizzazione e dell'implementazione di interventi speciali di sicurezza globale, impianti elettrici e di climatizzazione, con l'obiettivo di ridurre il rischio e contenere i costi."
+      "SINT nasce nel gennaio 1990 per rispondere alle problematiche della sicurezza, grazie alle conoscenze accumulate dal fondatore, Mario Vago, che negli anni precedenti aveva ricoperto incarichi di Responsabile in importanti industrie del settore.",
+      "Oggi SINT si propone come Azienda leader del mercato italiano nello studio, la progettazione, la realizzazione e l'implementazione di interventi speciali di sicurezza globale, impianti elettrici e di climatizzazione, con l'obiettivo di ridurre il rischio e contenere i costi."
     ],
     "partnership": "In partnership con Leviton, produttore globale certificato, per soluzioni di cabling e networking.",
     "teamTitle": "Il team",
@@ -60,7 +40,7 @@
       {
         "name": "Laura Bramanti Vago",
         "role": "Amministratore unico",
-        "details": "Amministrazione e gestione delle gare d'appalto",
+        "details": "Ragioniera, amministrazione, gestione gare d’appalto",
         "qualifications": []
       },
       {
@@ -92,14 +72,14 @@
       },
       {
         "name": "Ing. Stefano Galli",
-        "role": "Progettazione strutturale, direzione lavori e coordinamento della sicurezza",
+        "role": "Progettista strutturale, direzione lavori e coordinamento della sicurezza",
         "details": "",
         "qualifications": []
       },
       {
         "name": "Arch. Katia Palena",
-        "role": "Progettazione architettonica, riqualificazione e recupero edilizio",
-        "details": "Computi metrici, disciplinari di gara e gestione delle autorizzazioni",
+        "role": "Stesura computi metrici, disciplinari di gara, progettista architettonico, riqualificazione e recupero edilizi, gestione autorizzazioni.",
+        "details": "",
         "qualifications": []
       },
       {
@@ -110,25 +90,25 @@
       },
       {
         "name": "Ing. Arch. Annamaria Seveso",
-        "role": "Progettazione architettonica, strutturale e di restauro",
+        "role": "Progettista architettonico, strutturale e di restauro",
         "details": "",
         "qualifications": []
       },
       {
         "name": "Arch. Giusi Valente",
-        "role": "Progettazione architettonica, riqualificazione energetica e pianificazione urbana",
+        "role": "Progettista architettonico, riqualificazione energetica, pianificatore urbano",
         "details": "",
         "qualifications": []
       },
       {
         "name": "Geom. Aldo Allievi",
-        "role": "Disegno AutoCAD, computi metrici e rilievi",
+        "role": "Disegno AutoCAD, stesura computi metrici e rilievi",
         "details": "",
         "qualifications": []
       },
       {
         "name": "Diana Beltramini",
-        "role": "Sviluppo del gestionale aziendale",
+        "role": "Softwerista del gestionale aziendale",
         "details": "",
         "qualifications": []
       },
@@ -142,71 +122,64 @@
   },
   "services": {
     "kicker": "Servizi",
-    "title": [
-      "La sicurezza,",
-      "progettata bene."
-    ],
+    "title": ["Titolo,", "titolo."],
     "groups": [
       {
-        "lead": "Settori di intervento",
+        "lead": "I principali settori di SINT:",
         "items": [
-          "Impianti di sicurezza: difese di tipo strutturale, antintrusione, antincendio, TVCC e controllo accessi",
-          "Integrazione tra la sicurezza e i controlli degli impianti tecnologici",
-          "Sistemi computerizzati di supervisione locale, regionale e nazionale",
-          "Adeguamento alle normative vigenti"
+          "Sicurezza strutturale: Antintrusione, antincendio, TVCC e controllo accessi.",
+          "Integrazione tra le funzionalità ed i controlli degli impianti tecnologici e la sicurezza.",
+          "Telecomunicazioni: Progettazione antenne, stazioni radio base e centrali telefoniche.",
+          "Supervisione e compliance: Sistemi di supervisione locale, regionale e nazionale, adeguamento alle normative vigenti."
         ]
       },
       {
-        "lead": "Progettazione e direzione lavori",
+        "lead": "SINT cura anche progettazione e direzione lavori per:",
         "items": [
-          "Opere architettoniche residenziali, commerciali e produttive",
-          "Opere strutturali e antisismiche",
-          "Impianti elettrici e speciali, impianti meccanici di condizionamento, antincendio e aspirazione fumi",
-          "Coordinamento della sicurezza nei cantieri, in fase di progettazione ed esecuzione"
+          "Edilizia e Strutture: Opere residenziali, commerciali, produttive e interventi antisismici.",
+          "Impiantistica: Elettrica e speciale, meccanica di condizionamento, antincendio e aspirazione fumi.",
+          "Sicurezza: Coordinamento in fase di progettazione ed esecuzione."
         ]
       }
     ],
     "items": [
       {
         "title": "Risk management",
-        "text": "Analizziamo i rischi di sedi e impianti e definiamo strategie di sicurezza con soluzioni integrate, calibrate sulle esigenze del committente."
+        "text": "Studio delle strategie di sicurezza per identificare tutti i principali rischi, ricercando soluzioni integrate in grado di soddisfare le diverse esigenze evidenziate."
       },
       {
-        "title": "Capitolati d'appalto e confronto offerte",
-        "text": "Redigiamo specifiche tecniche e funzionali precise e univoche, base indispensabile per scegliere correttamente i fornitori, e confrontiamo le offerte."
+        "title": "Building Automation",
+        "text": "Studio di fattibilità degli interventi di automatizzazione, sulla base delle reali esigenze operative degli Utenti, per giungere al progetto esecutivo degli apprestamenti."
       },
       {
-        "title": "Progettazione impianti",
-        "text": "Progettazione civile e industriale di impianti di sicurezza, elettrici e di controllo tecnologico, nel rispetto di standard consolidati e delle normative vigenti."
-      },
-      {
-        "title": "Centralizzazione impianti",
-        "text": "Progettiamo la centralizzazione dei sistemi di sicurezza integrati, con supervisione locale, regionale e nazionale: per Terna su oltre 100 siti strategici."
-      },
-      {
-        "title": "Building automation",
-        "text": "Studi di fattibilità per l'automazione degli edifici, basati sulle reali esigenze operative di chi li utilizza, fino al progetto esecutivo."
-      },
-      {
-        "title": "Cabling e networking",
-        "text": "In partnership con Leviton, produttore globale certificato, progettiamo e realizziamo soluzioni di cablaggio e networking integrate nella progettazione impiantistica."
-      },
-      {
-        "title": "Supervisione e direzione lavori",
-        "text": "Controlliamo e coordiniamo le imprese esecutrici e gestiamo per conto del committente i rapporti contrattuali con loro, assumendone la piena responsabilità."
+        "title": "Cabling e Networking",
+        "text": "In partnership con Leviton (produttore globale certificato) progettiamo e realizziamo soluzioni cabling e networking. Un servizio tecnico diretto alla progettazione impiantistica integrata."
       },
       {
         "title": "Collaudi",
-        "text": "Verifichiamo che ogni parte delle forniture sia completa e funzionante come da contratto, redigendo i verbali previsti in ogni fase."
+        "text": "SINT fornisce la gestione dell'insieme delle operazioni atte a sancire la consistenza ed il funzionamento di tutte le parti delle forniture, così come sono state commissionate dal Cliente con redazione, durante ogni fase, dei verbali previsti."
+      },
+      {
+        "title": "Supervisione e Direzione lavori",
+        "text": "SINT assume la piena responsabilità del controllo e del coordinamento dell'attività realizzativa da parte delle Aziende incaricate dell'esecuzione delle opere, sostituendo a tutti gli effetti la Committente nella gestione dei rapporti contrattuali."
+      },
+      {
+        "title": "Capitolati d'Appalto/confronto offerte",
+        "text": "Si tratta della fase, (estremamente importante per una corretta scelta dei Fornitori) di stesura, in maniera precisa ed univoca, delle specifiche tecniche e funzionali degli apprestamenti da realizzare."
+      },
+      {
+        "title": "Progetti Impianti",
+        "text": "Progettazione civile, industriale degli impianti di sicurezza, elettrici e di controllo tecnologico, nel rispetto di consolidati standards aziendali e secondo le più avanzate e diffuse normative."
+      },
+      {
+        "title": "Centralizzazione Impianti",
+        "text": "Nei progetti di centralizzazione dei sistemi di sicurezza integrati SINT ha acquisito esperienze talmente numerose e qualificanti, da farne di fatto l'unica Società di consulenza oggi operante su tale problematica in concreto in Italia."
       }
     ]
   },
   "clients": {
     "kicker": "Clienti",
-    "title": [
-      "Dalle infrastrutture nazionali",
-      "ai musei."
-    ],
+    "title": ["Titolo", "titolo."],
     "caseStudies": [
       {
         "client": "Terna",
@@ -249,17 +222,11 @@
   },
   "contact": {
     "kicker": "Contatti",
-    "title": [
-      "Da Meda,",
-      "in tutta Italia."
-    ],
-    "copy": "La sede legale e operativa di SINT è a Meda (MB). Seguiamo progetti per aziende ed enti pubblici in tutta Italia.",
+    "title": ["Titolo", "titolo."],
+    "copy": "La sede operativa di SINT è a Meda (MB). Seguiamo progetti per aziende ed enti pubblici in tutta Italia.",
     "mapsLabel": "Apri su Google Maps",
-    "panelKicker": "Parliamo del vostro progetto",
-    "panelTitle": [
-      "Ogni progetto sicuro",
-      "inizia da una conversazione."
-    ],
+    "panelKicker": "Parliamo del progetto",
+    "panelTitle": ["Titolo", "titolo."],
     "vatLabel": "P.IVA e C.F."
   },
   "footer": {

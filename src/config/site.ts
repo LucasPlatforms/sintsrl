@@ -18,6 +18,10 @@ export const site = {
     href: "tel:+3903621545393",
     international: "+39 0362 1545393",
   },
+  mobile: {
+    display: "348 248 8974",
+    href: "tel:+393482488974",
+  },
   email: "info@sintsrl.it",
   vatNumber: "02011550965",
   mapsUrl:

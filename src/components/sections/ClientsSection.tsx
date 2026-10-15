@@ -1,9 +1,10 @@
+import Image from "next/image";
 import { getLocale, getMessages } from "next-intl/server";
 import { AccentHeading } from "@/components/ui/AccentHeading";
 import { Kicker } from "@/components/ui/Kicker";
 import { sectionIds } from "@/config/navigation";
 import { sectionPadding } from "@/components/ui/section";
-import { otherClients } from "@/data/clients";
+import { clients as clientLogos } from "@/data/clients";
 
 export async function ClientsSection() {
   const { clients } = await getMessages();
@@ -24,38 +25,21 @@ export async function ClientsSection() {
           />
         </div>
 
-        {/* TODO: verificare con il cliente l'autorizzazione a pubblicare ciascun case study. */}
-        <ul className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-          {clients.caseStudies.map((cs) => (
-            <li
-              key={cs.client}
-              className="flex flex-col border border-[#e7eae6] bg-white px-[22px] pt-6 pb-[26px] transition-colors hover:border-[#c4d4c7]"
-            >
-              <p className="mb-2.5 text-[11px] font-bold tracking-[0.12em] text-brand uppercase">
-                {cs.sector}
-              </p>
-              <h3 className="text-[19px] font-bold tracking-[-0.035em] text-ink">{cs.client}</h3>
-              <p className="mt-1 text-xs text-muted">{cs.place}</p>
-              <p className="mt-3 text-[13.5px] leading-[1.6] text-muted">{cs.description}</p>
+        {/* Griglia di loghi: ogni logo sta dentro un'area fissa senza essere tagliato.
+            mix-blend-multiply rende invisibile lo sfondo bianco dei JPG sul fondo della sezione. */}
+        <ul className="grid grid-cols-2 gap-x-8 gap-y-10 xs:grid-cols-3 md:grid-cols-4 md:gap-x-12 md:gap-y-14 lg:grid-cols-6">
+          {clientLogos.map(({ name, logo }) => (
+            <li key={logo} className="relative h-16 md:h-20">
+              <Image
+                src={`/clienti/${logo}`}
+                alt={name}
+                fill
+                sizes="(min-width: 801px) 180px, 45vw"
+                className="object-contain mix-blend-multiply"
+              />
             </li>
           ))}
         </ul>
-
-        <div className="mt-[50px] md:mt-[76px]">
-          <p className="mb-[18px] text-[10px] font-bold tracking-[0.14em] text-[#87928a] uppercase">
-            {clients.othersLabel}
-          </p>
-          <ul className="flex flex-wrap border-y border-line">
-            {otherClients.map((name) => (
-              <li
-                key={name}
-                className="mr-3 py-4 pr-3 font-display text-xs font-bold text-[#506057] xs:mr-6 xs:pr-6 xs:text-sm"
-              >
-                {name}
-              </li>
-            ))}
-          </ul>
-        </div>
       </div>
     </section>
   );

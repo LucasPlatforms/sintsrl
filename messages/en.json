@@ -22,34 +22,14 @@
     "en": "English"
   },
   "hero": {
-    "title": [
-      "Security",
-      "engineering."
-    ],
+    "title": ["Security", "engineering."],
     "copy": "SINT supports companies and public bodies with risk assessment, security systems design, works supervision and acceptance testing.",
     "ctaPrimary": "Explore our services",
-    "ctaSecondary": "Our clients",
-    "stats": [
-      {
-        "value": "1990",
-        "label": "founded"
-      },
-      {
-        "value": "100+",
-        "label": "Terna strategic sites"
-      },
-      {
-        "value": "24",
-        "label": "postal sorting centres"
-      }
-    ]
+    "ctaSecondary": "Our clients"
   },
   "about": {
     "kicker": "The company",
-    "title": [
-      "Knowledge is the",
-      "key to success."
-    ],
+    "title": ["Knowledge is the", "key to success."],
     "paragraphs": [
       "SINT was founded in January 1990 to address security challenges, building on the expertise of its founder, Mario Vago, who had previously held senior roles at major companies in the sector.",
       "Today SINT studies, designs, delivers and implements specialist integrated-security projects, electrical systems and HVAC, with the aim of reducing risk and containing costs."
@@ -142,10 +122,7 @@
   },
   "services": {
     "kicker": "Services",
-    "title": [
-      "Security,",
-      "properly designed."
-    ],
+    "title": ["Security,", "properly designed."],
     "groups": [
       {
         "lead": "Areas of expertise",
@@ -203,10 +180,7 @@
   },
   "clients": {
     "kicker": "Clients",
-    "title": [
-      "From national infrastructure",
-      "to museums."
-    ],
+    "title": ["From national infrastructure", "to museums."],
     "caseStudies": [
       {
         "client": "Terna",
@@ -249,17 +223,11 @@
   },
   "contact": {
     "kicker": "Contact",
-    "title": [
-      "From Meda,",
-      "across Italy."
-    ],
+    "title": ["From Meda,", "across Italy."],
     "copy": "SINT's registered and operational office is in Meda (MB), north of Milan. We work with companies and public bodies throughout Italy.",
     "mapsLabel": "Open in Google Maps",
     "panelKicker": "Let's talk about your project",
-    "panelTitle": [
-      "Every secure project",
-      "starts with a conversation."
-    ],
+    "panelTitle": ["Every secure project", "starts with a conversation."],
     "vatLabel": "VAT and tax code"
   },
   "footer": {

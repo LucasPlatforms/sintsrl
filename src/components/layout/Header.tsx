@@ -32,7 +32,9 @@ function useActiveSection(enabled: boolean) {
       // Una sezione è "attiva" quando attraversa la fascia centrale della finestra.
       { rootMargin: "-45% 0px -50% 0px" },
     );
-    document.querySelectorAll("[data-section]").forEach((el) => observer.observe(el));
+    document
+      .querySelectorAll("[data-section]")
+      .forEach((el) => observer.observe(el));
     return () => observer.disconnect();
   }, [enabled]);
 
@@ -79,6 +81,7 @@ export function Header() {
               <Link
                 key={key}
                 href={{ pathname: "/", hash: sectionIds[key][locale] }}
+                replace={isHome}
                 onClick={closeMenu}
                 aria-current={active ? "true" : undefined}
                 className={cn(
@@ -95,7 +98,8 @@ export function Header() {
           {/* Stessa pagina (e stessa sezione) nell'altra lingua, con l'URL definitivo.
               Un <a> semplice ricarica la pagina, cosa corretta perché cambia la lingua del documento. */}
           {otherLocales.map((l) => {
-            const hash = isHome && activeSection ? `#${sectionIds[activeSection][l]}` : "";
+            const hash =
+              isHome && activeSection ? `#${sectionIds[activeSection][l]}` : "";
             return (
               <a
                 key={l}
@@ -113,6 +117,7 @@ export function Header() {
 
           <Link
             href={{ pathname: "/", hash: sectionIds.contact[locale] }}
+            replace={isHome}
             onClick={closeMenu}
             className="mt-3 inline-flex items-center justify-center gap-2 bg-ink px-[17px] py-3 text-white transition-colors hover:bg-ink-soft md:mt-0"
           >
@@ -128,7 +133,11 @@ export function Header() {
           aria-expanded={menuOpen}
           aria-controls="menu-principale"
         >
-          {menuOpen ? <X size={24} aria-hidden /> : <Menu size={24} aria-hidden />}
+          {menuOpen ? (
+            <X size={24} aria-hidden />
+          ) : (
+            <Menu size={24} aria-hidden />
+          )}
         </button>
       </div>
     </header>
