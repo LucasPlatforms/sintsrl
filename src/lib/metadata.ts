@@ -34,7 +34,10 @@ export async function buildMetadata({
     description: finalDescription,
     alternates: {
       canonical: languages[locale],
-      languages: { ...languages, "x-default": languages[routing.defaultLocale] },
+      languages: {
+        ...languages,
+        "x-default": languages[routing.defaultLocale],
+      },
     },
     openGraph: {
       type: "website",
@@ -43,7 +46,10 @@ export async function buildMetadata({
       url: languages[locale],
       title: title ? `${title} | ${t("siteName")}` : t("title"),
       description: finalDescription,
-      // TODO: aggiungere un'immagine di condivisione 1200x630 (app/[locale]/opengraph-image).
+      // Immagine mostrata quando si condivide un link al sito (WhatsApp, LinkedIn…): public/og-image.png.
+      images: [
+        { url: "/og-image.png", width: 1200, height: 630, alt: t("siteName") },
+      ],
     },
   };
 }

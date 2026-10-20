@@ -12,6 +12,10 @@ export async function OrganizationJsonLd() {
     legalName: site.legalName,
     description: t("description"),
     url: site.url,
+    // Immagine mostrata quando si condivide un link al sito (WhatsApp, LinkedIn…): public/og-image.png.
+    images: [
+      { url: "/og-image.png", width: 1200, height: 650, alt: t("siteName") },
+    ],
     email: site.email,
     telephone: site.phone.international,
     foundingDate: String(site.foundingYear),
@@ -29,7 +33,9 @@ export async function OrganizationJsonLd() {
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data).replace(/</g, "\\u003c") }}
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify(data).replace(/</g, "\\u003c"),
+      }}
     />
   );
 }

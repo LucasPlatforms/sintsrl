@@ -22,7 +22,7 @@ export async function Hero() {
         alt=""
         fill
         sizes="100vw"
-        placeholder="blur"
+        loading="eager"
         fetchPriority="high"
         className="object-contain object-center"
       />
