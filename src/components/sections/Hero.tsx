@@ -35,9 +35,9 @@ export async function Hero() {
       />
 
       <div className="relative container-site pt-[147px] md:pt-[82px]">
-        <h1 className="max-w-[700px] text-[clamp(52px,7vw,92px)] leading-[0.98] font-bold tracking-[-0.07em]">
+        <h1 className="max-w-[700px] text-[clamp(52px,3vw,92px)] leading-[0.98] font-bold tracking-[-0.07em] text-brand">
           {titleFirst}
-          <span className="block text-brand">{titleRest.join(" ")}</span>
+          <span className="block text-ink">{titleRest.join(" ")}</span>
         </h1>
 
         <p className="mt-[29px] mb-[38px] max-w-[520px] border-l-4 border-brand bg-paper/85 py-4 pr-5 pl-5 text-[20px] leading-[1.45] font-medium text-ink backdrop-blur-sm md:text-[20px]">

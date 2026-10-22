@@ -40,7 +40,6 @@ export async function ContactSection() {
         </div>
 
         <div className="bg-ink px-7 pt-[45px] pb-[42px] text-white md:mt-[70px] md:px-[65px] md:pt-[65px] md:pb-[60px]">
-          <Kicker tone="dark">{contact.panelKicker}</Kicker>
           <AccentHeading
             as="h3"
             lines={contact.panelTitle}
