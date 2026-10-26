@@ -8,7 +8,7 @@
     "mainNav": "Main navigation",
     "homeLabel": "SINT S.r.l. — back to home",
     "skipToContent": "Skip to content",
-    "about": "About us",
+    "about": "Company",
     "services": "Services",
     "clients": "Clients",
     "contact": "Contact",
@@ -22,8 +22,8 @@
     "en": "English"
   },
   "hero": {
-    "title": ["Security", "engineering."],
-    "copy": "SINT supports companies and public bodies with risk assessment, security systems design, works supervision and acceptance testing.",
+    "title": ["Since 1990", "committed to technological innovation."],
+    "copy": "Design of video surveillance, access control and integrated security systems.",
     "ctaPrimary": "Explore our services",
     "ctaSecondary": "Our clients"
   },
@@ -31,8 +31,8 @@
     "kicker": "The company",
     "title": ["Knowledge is the", "key to success."],
     "paragraphs": [
-      "SINT was founded in January 1990 to address security challenges, building on the expertise of its founder, Mario Vago, who had previously held senior roles at major companies in the sector.",
-      "Today SINT studies, designs, delivers and implements specialist integrated-security projects, electrical systems and HVAC, with the aim of reducing risk and containing costs."
+      "SINT was founded in January 1990 to address safety issues, drawing on the expertise accumulated by its founder, Mario Vago, who had previously held managerial positions in leading companies within the sector.",
+      "Today, SINT is a leading company in the Italian market specialising in the study, design, construction and implementation of specialised comprehensive security solutions, electrical systems and air-conditioning systems, with the aim of reducing risk and keeping costs down."
     ],
     "partnership": "In partnership with Leviton, a certified global manufacturer, for cabling and networking solutions.",
     "teamTitle": "Our team",
@@ -40,8 +40,8 @@
     "team": [
       {
         "name": "Laura Bramanti Vago",
-        "role": "Sole Director",
-        "details": "Administration and tender management",
+        "role": "Director",
+        "details": "Accountant, administration, tender management",
         "qualifications": []
       },
       {
@@ -66,20 +66,20 @@
             "bold": "construction site safety"
           },
           {
-            "text": "Member of the Lombardy Region register of energy performance certifiers",
-            "bold": "energy performance certifiers"
+            "text": "Member of the Lombardy Region’s register of certified energy experts",
+            "bold": "certified energy"
           }
         ]
       },
       {
         "name": "Ing. Stefano Galli",
-        "role": "Structural design, works supervision and safety coordination",
+        "role": "Structural design, works supervision and safety coordination ",
         "details": "",
         "qualifications": []
       },
       {
         "name": "Arch. Katia Palena",
-        "role": "Architectural design, building renovation and refurbishment",
+        "role": "Preparation of bills of quantities and tender specifications, architectural design, building refurbishment and regeneration, management of permissions.",
         "details": "Bills of quantities, tender specifications and permitting",
         "qualifications": []
       },
@@ -103,13 +103,13 @@
       },
       {
         "name": "Geom. Aldo Allievi",
-        "role": "AutoCAD drafting, bills of quantities and surveys",
+        "role": "AutoCAD drafting, bills of quantities",
         "details": "",
         "qualifications": []
       },
       {
         "name": "Diana Beltramini",
-        "role": "Company management software development",
+        "role": "Management software development",
         "details": "",
         "qualifications": []
       },
@@ -123,64 +123,63 @@
   },
   "services": {
     "kicker": "Services",
-    "title": ["Security,", "properly designed."],
+    "title": ["From risk analysis,", "to testing."],
     "groups": [
       {
         "lead": "Areas of expertise",
         "items": [
           "Security systems: physical protection, intrusion detection, fire protection, CCTV and access control",
-          "Integration between security and building services controls",
-          "Compliance with current regulations"
+          "Integration between the functions and controls of technical systems and security",
+          "Supervision and compliance: Local, regional and national supervisory systems; compliance with current regulations"
         ]
       },
       {
         "lead": "Design and works supervision",
         "items": [
-          "Residential, commercial and industrial buildings",
-          "Structural and seismic works",
-          "Electrical and special systems, HVAC, fire protection and smoke extraction",
-          "Construction health and safety coordination, during design and execution"
+          "Construction and Structures: Residential, commercial and industrial projects, and anti-seismic works",
+          "Building services: Electrical and specialised systems, mechanical and air-conditioning systems, fire protection and smoke extraction systems",
+          "Safety: Coordination during the design and construction phases"
         ]
       }
     ],
     "items": [
       {
         "title": "Risk management",
-        "text": "We assess the risks to sites and facilities and define security strategies with integrated solutions tailored to the client's needs."
+        "text": "Analysis of security strategies to identify all the main risks, seeking integrated solutions capable of meeting the various needs identified."
       },
       {
-        "title": "Tender specifications and bid comparison",
-        "text": "We draft precise, unambiguous technical and functional specifications, the basis for choosing the right suppliers, and compare the bids received."
+        "title": "Building Automation",
+        "text": "Feasibility study of automation measures, based on the users’ actual operational requirements, with a view to producing the detailed design for the installations."
       },
       {
-        "title": "Systems design",
-        "text": "Civil and industrial design of security, electrical and building control systems, following established standards and current regulations."
+        "title": "Cabling and Networking",
+        "text": "In partnership with Leviton (a certified global manufacturer), we design and implement cabling and networking solutions. A technical service specialising in integrated systems design."
       },
       {
-        "title": "Centralised monitoring",
-        "text": "We design the centralisation of integrated security systems, with local, regional and national monitoring: for Terna, across more than 100 strategic sites."
+        "title": "Testing",
+        "text": "SINT manages the full range of operations designed to verify the integrity and proper functioning of all components of the supplies, as commissioned by the Client, drawing up the required reports at each stage."
       },
       {
-        "title": "Building automation",
-        "text": "Feasibility studies for building automation, based on the real operating needs of the people who use the building, through to detailed design."
+        "title": "Supervision and Project Management",
+        "text": "SINT assumes full responsibility for supervising and coordinating the construction work carried out by the contractors responsible for the works, effectively acting in the place of the Client in the management of contractual relations."
       },
       {
-        "title": "Cabling and networking",
-        "text": "In partnership with Leviton, a certified global manufacturer, we design and deliver cabling and networking solutions integrated into the overall systems design."
+        "title": "Tender Specifications/Comparison of Tenders",
+        "text": "This is the stage  (which is extremely important for selecting the right suppliers) of drawing up, in a precise and unambiguous manner, the technical and functional specifications for the equipment to be supplied."
       },
       {
-        "title": "Works supervision",
-        "text": "We monitor and coordinate the contractors and manage the contractual relationship with them on the client's behalf, taking full responsibility."
+        "title": "Plant Projects",
+        "text": "Civil and industrial design of security, electrical and technological control systems, in accordance with established company standards and the most advanced and widely adopted regulations."
       },
       {
-        "title": "Acceptance testing",
-        "text": "We verify that every part of the supply is complete and working as contracted, issuing the required reports at each stage."
+        "title": "System Centralisation",
+        "text": "In projects involving the centralisation of integrated security systems, SINT has gained such extensive and valuable experience that it is, in effect, the only consultancy firm currently active in this field in Italy."
       }
     ]
   },
   "clients": {
     "kicker": "Clients",
-    "title": ["From national infrastructure", "to museums."],
+    "title": ["Over thirty years", "of projects."],
     "caseStudies": [
       {
         "client": "Terna",
@@ -223,18 +222,18 @@
   },
   "contact": {
     "kicker": "Contact",
-    "title": ["From Meda,", "across Italy."],
+    "title": ["Let’s talk about", "your safety."],
     "copy": "SINT's registered and operational office is in Meda (MB), north of Milan. We work with companies and public bodies throughout Italy.",
     "mapsLabel": "Open in Google Maps",
     "panelKicker": "Let's talk about your project",
-    "panelTitle": ["Every secure project", "starts with a conversation."],
-    "vatLabel": "VAT and tax code"
+    "panelTitle": ["A secure project", "starts here."],
+    "vatLabel": "VAT"
   },
   "footer": {
     "privacy": "Privacy policy",
     "cookies": "Cookie policy",
     "backToTop": "Back to top",
-    "vatLabel": "VAT and tax code"
+    "vatLabel": "VAT"
   },
   "pages": {
     "privacy": {

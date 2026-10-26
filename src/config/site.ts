@@ -14,16 +14,16 @@ export const site = {
     country: "IT",
   },
   phone: {
-    display: "0362 1545393",
+    display: "+39 0362 1545393",
     href: "tel:+3903621545393",
     international: "+39 0362 1545393",
   },
   mobile: {
-    display: "348 248 8974",
+    display: "+39 348 248 8974",
     href: "tel:+393482488974",
   },
   email: "info@sintsrl.it",
-  vatNumber: "02011550965",
+  vatNumber: "IT02011550965",
   mapsUrl:
     "https://www.google.com/maps/search/?api=1&query=Via+Solferino+81+20821+Meda+MB",
 } as const;
