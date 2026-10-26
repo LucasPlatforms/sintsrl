@@ -15,7 +15,7 @@ export async function ServicesSection() {
       className={`bg-forest text-white ${sectionPadding()}`}
     >
       <div className="container-site">
-        <div className="mb-[60px] grid gap-[34px] md:grid-cols-[28%_1fr] md:gap-x-[6%]">
+        <div className="reveal mb-[60px] grid gap-[34px] md:grid-cols-[28%_1fr] md:gap-x-[6%]">
           <Kicker tone="dark">{services.kicker}</Kicker>
           <AccentHeading
             lines={services.title}
@@ -28,7 +28,7 @@ export async function ServicesSection() {
           {services.groups.map((group) => (
             <div
               key={group.lead}
-              className="rounded-md border border-forest-line bg-forest-panel px-[30px] py-8"
+              className="reveal rounded-md border border-forest-line bg-forest-panel px-[30px] py-8"
             >
               <p className="mb-5 text-base leading-normal font-bold text-mist-pale">
                 {group.lead}
@@ -51,7 +51,7 @@ export async function ServicesSection() {
           {services.items.map((service, i) => (
             <li
               key={service.title}
-              className="flex gap-5 border-b border-forest-line py-7 transition-colors hover:bg-mint/4"
+              className="reveal flex gap-5 border-b border-forest-line py-7 transition-colors hover:bg-mint/4"
             >
               <span
                 aria-hidden
@@ -63,7 +63,9 @@ export async function ServicesSection() {
                 <h3 className="mb-2 text-[19px] font-bold tracking-[-0.035em] text-white">
                   {service.title}
                 </h3>
-                <p className="text-[13.5px] leading-[1.65] text-mist">{service.text}</p>
+                <p className="text-[13.5px] leading-[1.65] text-mist">
+                  {service.text}
+                </p>
               </div>
             </li>
           ))}

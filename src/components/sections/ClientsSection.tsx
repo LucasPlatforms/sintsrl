@@ -17,7 +17,7 @@ export async function ClientsSection() {
       className={`bg-paper ${sectionPadding()}`}
     >
       <div className="container-site">
-        <div className="mb-9 md:mb-[60px]">
+        <div className="reveal mb-9 md:mb-[60px]">
           <Kicker>{clients.kicker}</Kicker>
           <AccentHeading
             lines={clients.title}
@@ -29,7 +29,7 @@ export async function ClientsSection() {
             mix-blend-multiply rende invisibile lo sfondo bianco dei JPG sul fondo della sezione. */}
         <ul className="grid grid-cols-2 gap-x-8 gap-y-10 xs:grid-cols-3 md:grid-cols-4 md:gap-x-12 md:gap-y-14 lg:grid-cols-6">
           {clientLogos.map(({ name, logo }) => (
-            <li key={logo} className="relative h-16 md:h-20">
+            <li key={logo} className="bg-paper reveal relative h-16 md:h-20">
               <Image
                 src={`/clienti/${logo}`}
                 alt={name}

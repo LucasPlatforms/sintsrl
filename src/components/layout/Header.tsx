@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState, type RefObject } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 import { mainNav, sectionIds, type SectionKey } from "@/config/navigation";
@@ -41,6 +41,69 @@ function useActiveSection(enabled: boolean) {
   return enabled ? active : null;
 }
 
+type Indicator = {
+  x: number;
+  y: number;
+  width: number;
+  visible: boolean;
+  animate: boolean;
+};
+
+/**
+ * Posizione della linea verde sotto la voce attiva del menu (solo desktop).
+ * È una sola linea che scorre da una voce all'altra invece di comparire a scatto;
+ * quando nessuna sezione è attiva (in cima alla pagina) sparisce in dissolvenza.
+ */
+function useNavIndicator(
+  navRef: RefObject<HTMLElement | null>,
+  activeKey: SectionKey | null,
+) {
+  const [indicator, setIndicator] = useState<Indicator>({
+    x: 0,
+    y: 0,
+    width: 0,
+    visible: false,
+    animate: false,
+  });
+
+  useEffect(() => {
+    const nav = navRef.current;
+    if (!nav) return;
+
+    const update = () => {
+      const link = activeKey
+        ? nav.querySelector<HTMLElement>(`[data-nav="${activeKey}"]`)
+        : null;
+      // Nessuna voce attiva, oppure menu mobile chiuso: la linea si nasconde dove si trova.
+      if (!link || link.offsetWidth === 0) {
+        setIndicator((prev) => ({ ...prev, visible: false, animate: false }));
+        return;
+      }
+      const navBox = nav.getBoundingClientRect();
+      const linkBox = link.getBoundingClientRect();
+      setIndicator((prev) => ({
+        x: linkBox.left - navBox.left,
+        y: linkBox.bottom - navBox.top + 6,
+        width: linkBox.width,
+        visible: true,
+        // Scorre solo se era già visibile; se riappare, compare sotto la voce giusta.
+        animate: prev.visible,
+      }));
+    };
+
+    const frame = requestAnimationFrame(update);
+    window.addEventListener("resize", update);
+    // I font caricati dopo cambiano la larghezza delle voci.
+    document.fonts.ready.then(update);
+    return () => {
+      cancelAnimationFrame(frame);
+      window.removeEventListener("resize", update);
+    };
+  }, [navRef, activeKey]);
+
+  return indicator;
+}
+
 export function Header() {
   const t = useTranslations("nav");
   const tLang = useTranslations("languages");
@@ -48,6 +111,8 @@ export function Header() {
   const pathname = usePathname();
   const isHome = pathname === "/";
   const activeSection = useActiveSection(isHome);
+  const navRef = useRef<HTMLElement>(null);
+  const indicator = useNavIndicator(navRef, activeSection);
   const [menuOpen, setMenuOpen] = useState(false);
   const closeMenu = () => setMenuOpen(false);
 
@@ -67,11 +132,12 @@ export function Header() {
 
         <nav
           id="menu-principale"
+          ref={navRef}
           aria-label={t("mainNav")}
           className={cn(
             menuOpen ? "flex" : "hidden",
             "absolute inset-x-0 top-[72px] flex-col items-stretch border-b border-line bg-paper px-5 pt-2.5 pb-5 text-sm font-semibold text-ink-soft",
-            "md:static md:flex md:flex-row md:items-center md:gap-[34px] md:border-0 md:bg-transparent md:p-0",
+            "md:relative md:top-0 md:flex md:flex-row md:items-center md:gap-[34px] md:border-0 md:bg-transparent md:p-0",
           )}
         >
           {/* Le voci portano alle sezioni della home; da privacy/cookie tornano alla home e scorrono. */}
@@ -84,16 +150,32 @@ export function Header() {
                 replace={isHome}
                 onClick={closeMenu}
                 aria-current={active ? "true" : undefined}
+                data-nav={key}
                 className={cn(
                   "relative border-b border-line py-[15px] transition-colors hover:text-brand md:border-0 md:py-0",
-                  active &&
-                    "text-brand md:after:absolute md:after:inset-x-0 md:after:-bottom-1.5 md:after:h-0.5 md:after:bg-brand md:after:content-['']",
+                  active && "text-brand",
                 )}
               >
                 {t(key)}
               </Link>
             );
           })}
+
+          {/* Linea verde sotto la voce attiva: scorre tra le voci (solo desktop). */}
+          <span
+            aria-hidden
+            className={cn(
+              "pointer-events-none absolute top-0 left-0 hidden h-0.5 bg-brand md:block motion-reduce:transition-none",
+              indicator.animate
+                ? "transition-[transform,width,opacity] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]"
+                : "transition-opacity duration-300",
+            )}
+            style={{
+              width: indicator.width,
+              transform: `translate(${indicator.x}px, ${indicator.y}px)`,
+              opacity: indicator.visible ? 1 : 0,
+            }}
+          />
 
           {/* Stessa pagina (e stessa sezione) nell'altra lingua, con l'URL definitivo.
               Un <a> semplice ricarica la pagina, cosa corretta perché cambia la lingua del documento. */}

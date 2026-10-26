@@ -17,7 +17,7 @@ export async function ContactSection() {
       className="bg-sage pt-[85px] md:pt-[126px]"
     >
       <div className="container-site grid md:grid-cols-2">
-        <div className="pb-[68px] md:pt-2 md:pr-[70px] md:pb-[118px]">
+        <div className="reveal pb-[68px] md:pt-2 md:pr-[70px] md:pb-[118px]">
           <div className="mb-[33px] flex size-[52px] items-center justify-center rounded-full bg-brand text-white">
             <MapPin size={22} aria-hidden />
           </div>
@@ -39,7 +39,7 @@ export async function ContactSection() {
           </a>
         </div>
 
-        <div className="bg-ink px-7 pt-[45px] pb-[42px] text-white md:mt-[70px] md:px-[65px] md:pt-[65px] md:pb-[60px]">
+        <div className="reveal bg-ink px-7 pt-[45px] pb-[42px] text-white md:mt-[70px] md:px-[65px] md:pt-[65px] md:pb-[60px]">
           <AccentHeading
             as="h3"
             lines={contact.panelTitle}

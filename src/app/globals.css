@@ -108,3 +108,25 @@
 @utility hero-panel {
   background-color: rgb(235 240 233 / 0.55);
 }
+
+/* ===== Animazioni allo scorrimento =====
+   I blocchi con `reveal` salgono leggermente e compaiono mentre entrano nella finestra.
+   L'animazione segue lo scorrimento (animation-timeline: view()), senza JavaScript.
+   Dove il browser non la supporta, o se l'utente ha chiesto meno animazioni,
+   i blocchi restano semplicemente visibili. */
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+}
+
+@utility reveal {
+  @media (prefers-reduced-motion: no-preference) {
+    @supports (animation-timeline: view()) {
+      animation: reveal linear both;
+      animation-timeline: view();
+      animation-range: entry 0% cover 22%;
+    }
+  }
+}
