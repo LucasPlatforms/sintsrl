@@ -23,7 +23,7 @@ export const site = {
     href: "tel:+393482488974",
   },
   email: "info@sintsrl.it",
-  vatNumber: "IT02011550965",
+  vatNumber: "02011550965",
   mapsUrl:
     "https://www.google.com/maps/search/?api=1&query=Via+Solferino+81+20821+Meda+MB",
 } as const;
