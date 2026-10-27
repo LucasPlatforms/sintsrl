@@ -231,20 +231,13 @@
   },
   "footer": {
     "privacy": "Privacy policy",
-    "cookies": "Cookie policy",
     "backToTop": "Back to top",
     "vatLabel": "VAT"
   },
   "pages": {
     "privacy": {
       "title": "Privacy policy",
-      "description": "How SINT S.r.l. processes personal data.",
-      "body": "Content coming soon."
-    },
-    "cookies": {
-      "title": "Cookie policy",
-      "description": "How the SINT S.r.l. website uses cookies.",
-      "body": "Content coming soon."
+      "description": "How SINT S.r.l. processes personal data."
     }
   },
   "notFound": {

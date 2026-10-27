@@ -25,7 +25,6 @@ export const routing = defineRouting({
   pathnames: {
     "/": "/",
     "/privacy": { it: "/privacy", en: "/privacy" },
-    "/cookie-policy": { it: "/cookie-policy", en: "/cookie-policy" },
   },
 });
 

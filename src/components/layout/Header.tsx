@@ -140,7 +140,7 @@ export function Header() {
             "md:relative md:top-0 md:flex md:flex-row md:items-center md:gap-[34px] md:border-0 md:bg-transparent md:p-0",
           )}
         >
-          {/* Le voci portano alle sezioni della home; da privacy/cookie tornano alla home e scorrono. */}
+          {/* Le voci portano alle sezioni della home; da privacy tornano alla home e scorrono. */}
           {mainNav.map((key) => {
             const active = activeSection === key;
             return (

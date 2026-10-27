@@ -17,7 +17,8 @@ export async function Footer() {
         <div className="flex flex-col gap-[3px] text-[10px] text-[#93a097] xs:text-[11px]">
           <span className="text-xs font-bold text-white">{site.legalName}</span>
           <span>
-            {address.street} — {address.postalCode} {address.city} ({address.province})
+            {address.street} — {address.postalCode} {address.city} (
+            {address.province})
           </span>
           <span>
             {t("vatLabel")} {site.vatNumber}
@@ -31,19 +32,14 @@ export async function Footer() {
           >
             {t("privacy")}
           </Link>
-          <Link
-            href="/cookie-policy"
-            className="text-[11px] text-[#aeb8b1] underline underline-offset-3 transition-colors hover:text-mint"
-          >
-            {t("cookies")}
-          </Link>
         </div>
 
         <a
           href="#top"
           className="flex items-center gap-[7px] text-[11px] tracking-[0.1em] text-[#aeb8b1] uppercase"
         >
-          {t("backToTop")} <ChevronUp size={16} className="text-mint" aria-hidden />
+          {t("backToTop")}{" "}
+          <ChevronUp size={16} className="text-mint" aria-hidden />
         </a>
       </div>
     </footer>

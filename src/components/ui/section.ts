@@ -1,6 +1,6 @@
 /**
  * Spaziatura verticale delle sezioni.
- * `standalone`: la sezione apre una pagina separata (privacy, cookie),
+ * `standalone`: la sezione apre una pagina separata (privacy),
  * quindi lascia spazio in alto per l'header fisso.
  */
 export function sectionPadding(standalone = false) {

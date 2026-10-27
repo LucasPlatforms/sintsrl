@@ -230,20 +230,13 @@
   },
   "footer": {
     "privacy": "Privacy policy",
-    "cookies": "Cookie policy",
     "backToTop": "Torna su",
     "vatLabel": "P.IVA e C.F."
   },
   "pages": {
     "privacy": {
       "title": "Privacy policy",
-      "description": "Informativa sul trattamento dei dati personali di SINT S.r.l.",
-      "body": "Contenuto in preparazione."
-    },
-    "cookies": {
-      "title": "Cookie policy",
-      "description": "Informativa sull'uso dei cookie del sito di SINT S.r.l.",
-      "body": "Contenuto in preparazione."
+      "description": "Informativa sul trattamento dei dati personali di SINT S.r.l."
     }
   },
   "notFound": {
