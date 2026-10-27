@@ -21,10 +21,10 @@ export async function Hero() {
         src={heroCover}
         alt=""
         fill
-        sizes="100vw"
+        sizes="(min-width: 801px) 100vw, 3200px"
         loading="eager"
         fetchPriority="high"
-        className="object-cover object-[85%_50%] md:object-contain"
+        className="object-cover object-[92%_50%] md:object-contain"
       />
 
       <div aria-hidden className="hero-veil absolute inset-0" />
@@ -40,7 +40,7 @@ export async function Hero() {
           <span className="block text-ink">{titleRest.join(" ")}</span>
         </h1>
 
-        <p className="mt-[29px] mb-[38px] max-w-[520px] border-l-4 border-brand bg-paper/85 py-4 pr-5 pl-5 text-[20px] leading-[1.45] font-medium text-ink backdrop-blur-sm md:text-[20px]">
+        <p className="mt-[29px] mb-[38px] max-w-[520px] border-l-4 border-brand bg-paper/55 py-4 pr-5 pl-5 text-[20px] leading-[1.45] font-medium text-ink backdrop-blur-xs md:text-[20px]">
           {t.rich("copy", {
             year: String(site.foundingYear),
             highlight: (chunks) => (
@@ -62,7 +62,7 @@ export async function Hero() {
           <Link
             href={{ pathname: "/", hash: sectionIds.clients[locale] }}
             replace
-            className="inline-flex items-center gap-2 border-b border-current pb-1 text-[13px] font-bold"
+            className="bg-paper/55 px-[19px] py-[15px] inline-flex items-center gap-2 border-b border-current text-[13px] font-bold"
           >
             {hero.ctaSecondary} <ArrowUpRight size={17} aria-hidden />
           </Link>

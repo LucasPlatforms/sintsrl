@@ -135,9 +135,14 @@ export function Header() {
           ref={navRef}
           aria-label={t("mainNav")}
           className={cn(
-            menuOpen ? "flex" : "hidden",
-            "absolute inset-x-0 top-[72px] flex-col items-stretch border-b border-line bg-paper px-5 pt-2.5 pb-5 text-sm font-semibold text-ink-soft",
-            "md:relative md:top-0 md:flex md:flex-row md:items-center md:gap-[34px] md:border-0 md:bg-transparent md:p-0",
+            "absolute inset-x-0 top-[72px] flex flex-col items-stretch border-b border-line bg-paper px-5 pt-2.5 pb-5 text-sm font-semibold text-ink-soft",
+            // Mobile: il menu si apre e si chiude a tendina (scende e compare in dissolvenza).
+            // `invisible` da chiuso lo toglie anche dalla navigazione con tastiera e screen reader.
+            "transition-[clip-path,opacity,transform,visibility] duration-300 ease-out motion-reduce:transition-none",
+            menuOpen
+              ? "visible translate-y-0 opacity-100 [clip-path:inset(0_0_0_0)]"
+              : "invisible -translate-y-2 opacity-0 [clip-path:inset(0_0_100%_0)]",
+            "md:visible md:relative md:top-0 md:translate-y-0 md:flex-row md:items-center md:gap-[34px] md:border-0 md:bg-transparent md:p-0 md:opacity-100 md:transition-none md:[clip-path:none]",
           )}
         >
           {/* Le voci portano alle sezioni della home; da privacy tornano alla home e scorrono. */}
