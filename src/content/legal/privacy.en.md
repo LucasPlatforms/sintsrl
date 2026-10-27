@@ -15,7 +15,7 @@ SINT S.r.l., Via Solferino 81, 20821 Meda (MB), Italy · info@sintsrl.it · tel.
 
 ### Whether you must provide your data
 
-Browsing data is necessary to use the website. Providing contact details is optional, but without them we cannot reply.
+Browsing data is necessary to use the website. Providing contact details is optional.
 
 ### Recipients
 

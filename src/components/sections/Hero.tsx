@@ -24,7 +24,7 @@ export async function Hero() {
         sizes="100vw"
         loading="eager"
         fetchPriority="high"
-        className="object-contain object-center"
+        className="object-cover object-[85%_50%] md:object-contain"
       />
 
       <div aria-hidden className="hero-veil absolute inset-0" />

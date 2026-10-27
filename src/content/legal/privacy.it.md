@@ -15,7 +15,7 @@ SINT S.r.l., Via Solferino 81, 20821 Meda (MB) · info@sintsrl.it · tel. +39 03
 
 ### Obbligo di fornire i dati
 
-I dati di navigazione sono necessari per consultare il sito. Fornire i dati di contatto è facoltativo, ma senza di essi non possiamo rispondere.
+I dati di navigazione sono necessari per consultare il sito. Fornire i dati di contatto è facoltativo.
 
 ### Destinatari
 
